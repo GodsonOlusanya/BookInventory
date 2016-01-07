@@ -44,10 +44,11 @@ public class BookInventory {
 
 		while (rs.isAfterLast())
                 {
-			String fname = rs.getString("firstName");
-			String lname = rs.getString("lastName");
-			String book = rs.getString("bookName");
-			System.out.println(fname + " " + lname+ " " + book);
+                        String id = rs.getString("bookID");
+			String fname  = rs.getString("firstName");
+			String lname  = rs.getString("lastName");
+			String book   = rs.getString("bookName");
+			System.out.println(id + " "+ fname + " " + lname+ " " + book);
 
 
 		}
