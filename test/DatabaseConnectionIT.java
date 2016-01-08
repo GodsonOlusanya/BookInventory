@@ -15,12 +15,12 @@ import static org.junit.Assert.*;
  *
  * @author it
  */
-public class InterfaceDesignIT {
+public class DatabaseConnectionIT {
     
     /**
      *
      */
-    public InterfaceDesignIT() {
+    public DatabaseConnectionIT() {
     }
     
     /**
@@ -52,24 +52,13 @@ public class InterfaceDesignIT {
     }
 
     /**
-     * Test of updateTable method, of class InterfaceDesign.
+     * Test of connect method, of class DatabaseConnection.
      */
     @Test
-    public void testUpdateTable() {
-        System.out.println("updateTable");
-        InterfaceDesign instance = new InterfaceDesign();
-        instance.updateTable();
-        
-    }
-
-    /**
-     * Test of frame method, of class InterfaceDesign.
-     */
-    @Test
-    public void testFrame() {
-        System.out.println("frame");
-        InterfaceDesign instance = new InterfaceDesign();
-        instance.frame();
+    public void testConnect() {
+        System.out.println("connect");
+        DatabaseConnection instance = new DatabaseConnection();
+        instance.connect();
         }
     
 }
